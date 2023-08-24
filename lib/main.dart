@@ -106,6 +106,28 @@ class MyApp extends StatelessWidget {
               height: 20,
             ),
             Text(
+              'API',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Button(
+                    width: double.infinity,
+                    title: 'movie app',
+                    onPressed: () {
+                      _launchURL('https://shinnkura.github.io/movie_app/');
+                    },
+                    disable: false,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
               'ゲーム',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
